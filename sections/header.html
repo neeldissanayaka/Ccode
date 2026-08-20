@@ -1,0 +1,61 @@
+<!-- ========================================================
+     HEADER / NAVBAR COMPONENT
+     ======================================================== -->
+<header class="site-header" id="siteHeader">
+  <div class="nav-container">
+    <a class="brand" href="#home" aria-label="cCode Web Solutions Home">
+      <div class="brand-icon">
+        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="40" height="40" rx="10" fill="url(#brandGrad)"/>
+          <path d="M15 13L8 20L15 27" stroke="#080b11" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M25 13L32 20L25 27" stroke="#080b11" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <line x1="22" y1="10" x2="18" y2="30" stroke="#080b11" stroke-width="3.5" stroke-linecap="round"/>
+          <defs>
+            <linearGradient id="brandGrad" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#8b5cf6"/>
+              <stop offset="0.5" stop-color="#a855f7"/>
+              <stop offset="1" stop-color="#ec4899"/>
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+      <div class="brand-text">
+        <span class="brand-name">cCode<span class="brand-dot">.</span></span>
+        <span class="brand-tagline">Web Solutions</span>
+      </div>
+    </a>
+
+    <nav class="main-nav" id="mainNav" aria-label="Main Navigation">
+      <a class="nav-link active" href="#home">Home</a>
+      <a class="nav-link" href="#services">Services</a>
+      <a class="nav-link" href="#pricing">Pricing</a>
+      <a class="nav-link" href="#calculator">Estimator</a>
+      <a class="nav-link" href="#process">Process</a>
+      <a class="nav-link" href="#faq">FAQ</a>
+      <a class="nav-link" href="#contact">Contact</a>
+      <div class="mobile-nav-cta">
+        <a class="btn btn-primary btn-sm" href="#pricing">View Packages →</a>
+      </div>
+    </nav>
+
+    <div class="header-actions">
+      <!-- WhatsApp Direct Contact -->
+      <a class="btn-icon-wa" href="https://wa.me/94759615618?text=Hi%20cCode%20Web%20Solutions%2C%20I%27d%20like%20to%20discuss%20a%20website%20project." target="_blank" rel="noopener" aria-label="Chat on WhatsApp" title="Direct WhatsApp Chat">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.001 2C6.486 2 2 6.486 2 12c0 1.942.557 3.754 1.517 5.29L2.3 22l4.877-1.189A9.957 9.957 0 0 0 12.001 22C17.514 22 22 17.514 22 12s-4.486-10-9.999-10zm5.666 14.153c-.237.667-1.171 1.226-1.921 1.387-.514.11-1.18.192-3.424-.736-2.871-1.188-4.717-4.106-4.861-4.298-.144-.192-1.165-1.547-1.165-2.957 0-1.41.737-2.101 1.002-2.387.227-.245.594-.352.946-.352.115 0 .221.008.314.01.276.015.421.03.606.475.237.574.805 1.984.874 2.13.069.146.115.314.023.506-.084.192-.13.307-.26.475-.13.169-.276.376-.39.506-.131.146-.268.307-.115.575.146.268.66 1.088 1.418 1.762.973.866 1.793 1.142 2.069 1.265.276.123.444.107.605-.061.161-.169.69-.805.874-1.08.184-.276.368-.23.605-.138.238.085 1.533.782 1.801.92.268.146.444.215.506.338.069.123.069.69-.168 1.357z"/></svg>
+      </a>
+
+      <!-- Primary CTA -->
+      <a class="btn btn-primary nav-cta-desktop" href="#pricing">
+        <span>Get Started</span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+
+      <!-- Mobile Menu Toggle -->
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="bar bar-1"></span>
+        <span class="bar bar-2"></span>
+        <span class="bar bar-3"></span>
+      </button>
+    </div>
+  </div>
+</header>
