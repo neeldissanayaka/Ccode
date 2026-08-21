@@ -1,5 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://ccode.help/sitemap.xml
-Host: https://ccode.help
