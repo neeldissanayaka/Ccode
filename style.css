@@ -107,9 +107,8 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
-  overflow-y: scroll;
-  width: 100%;
-  max-width: 100%;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(124, 58, 237, 0.3) var(--bg-primary);
 }
 
 body {
@@ -117,8 +116,6 @@ body {
   color: var(--text-primary);
   font-family: var(--font-body);
   line-height: 1.55;
-  width: 100%;
-  max-width: 100%;
   margin: 0;
   padding: 0;
   position: relative;
@@ -132,32 +129,26 @@ body.no-scroll {
 main {
   width: 100%;
   max-width: 100%;
-  overflow-x: clip;
   position: relative;
 }
 
-/* Sleek Single Scrollbar (Zero Duplicate Horizontal Bars) */
-::-webkit-scrollbar {
-  width: 8px;
-  height: 0px;
+/* Sleek Single Root Scrollbar (Only on html, never on child elements) */
+html::-webkit-scrollbar {
+  width: 9px;
 }
 
-::-webkit-scrollbar-track {
+html::-webkit-scrollbar-track {
   background: var(--bg-primary);
 }
 
-::-webkit-scrollbar-thumb {
-  background: rgba(124, 58, 237, 0.28);
+html::-webkit-scrollbar-thumb {
+  background: rgba(124, 58, 237, 0.3);
   border-radius: var(--radius-pill);
+  border: 2px solid var(--bg-primary);
 }
 
-::-webkit-scrollbar-thumb:hover {
+html::-webkit-scrollbar-thumb:hover {
   background: var(--accent-purple);
-}
-
-* {
-  scrollbar-width: thin;
-  scrollbar-color: rgba(124, 58, 237, 0.28) transparent;
 }
 
 /* --- Ambient Mouse Pure Purple Glow Follower --- */
@@ -204,8 +195,6 @@ section, .section, .hero-section {
   box-sizing: border-box;
   width: 100%;
   max-width: 100%;
-  overflow-x: clip;
-  overflow-y: visible;
   position: relative;
 }
 
